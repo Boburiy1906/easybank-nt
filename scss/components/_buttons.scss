@@ -11,10 +11,16 @@
   display: none;
   background: none;
   border: none;
+  margin-left: auto;
 
   @include responsive(desktop_4) {
     display: block;
-    margin-left: auto;
+      }
+}
+
+.header__link{
+  @include responsive(desktop_4){
+    display: none;
   }
 }
 

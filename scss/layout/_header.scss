@@ -10,21 +10,22 @@ background-color: $color-white;
     @include responsive(desktop_4){
       padding-top: 24px;
       padding-bottom: 24px;
-    }
+          }
 }
-  &__wrapper {
+
+&__wrapper {
     width: 100%;
     display: flex;
     align-items: center;
 
     @include responsive(desktop_4){
-      display: none;
+      // display: none;
+      padding: 32px 0;
+      background-color: #fff;
       position: fixed;
-      top: 10px;
+      top: 15%;
+      border-radius: 4px;
 
     }
   }
-
-  &__link {}
-
 }
