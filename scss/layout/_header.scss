@@ -1,0 +1,30 @@
+.header {
+background-color: $color-white;
+
+  &__container {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: flex;
+    align-items: center;
+
+    @include responsive(desktop_4){
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+}
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @include responsive(desktop_4){
+      display: none;
+      position: fixed;
+      top: 10px;
+
+    }
+  }
+
+  &__link {}
+
+}

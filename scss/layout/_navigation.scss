@@ -1,0 +1,27 @@
+.sitenav {
+  margin-right: auto;
+  margin-left: auto;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {}
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__link {
+    color: $color-gray;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.11px;
+    padding-bottom: 27px;
+  }
+
+  &__link:hover {
+    border-bottom: 4px solid $color-light-green;
+  }
+}

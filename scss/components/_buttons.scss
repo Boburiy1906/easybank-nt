@@ -1,0 +1,24 @@
+.button {
+  cursor: pointer;
+  padding: 8px 34px;
+  white-space: nowrap;
+  @include font(14px, 28px, 500, $color-white);
+  background: linear-gradient(135deg, $color-light-green 0%, #2AB6D9 99.58%);
+  border-radius: 22px;
+}
+
+.header__button {
+  display: none;
+  background: none;
+  border: none;
+
+  @include responsive(desktop_4) {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+
+.hero__button {}
+
+.footer__button {}

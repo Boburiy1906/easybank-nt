@@ -1,0 +1,112 @@
+.footer {
+  background-color: $color-footer-bg;
+
+  &__container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+
+    @include responsive(desktop_5){
+      padding-top: 40px;
+      padding-bottom: 40px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__logo-networks-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__networks {
+    display: flex;
+
+    @include responsive (desktop_5){
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__network-link {}
+
+  &__network-link:not(:last-child) {
+    margin-right: 13px;
+    @include responsive(desktop_5){
+      margin-right: 16px;
+    }
+  }
+
+  &__network-icon {
+    @include responsive(desktop_5){
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__network-icon:hover path{
+    fill: $color-light-green;
+  }
+
+  &__nav {
+    display: flex;
+    flex-grow: 1;
+
+    @include responsive(desktop_5){
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include responsive(desktop_5){
+      align-items: center;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__nav-item {
+    margin-top: 0;
+  }
+
+  &__nav-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &__nav-link {
+    @include font(15px, 26px, 100, $color-white);
+    letter-spacing: -0.23px;
+  }
+
+  &__nav-link:hover{
+    color: $color-light-green;
+  }
+
+  &__link-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include responsive(desktop_5){
+      align-items: center;
+    }
+  }
+
+  &__copyright {
+    margin-top: 24px;
+    margin-bottom: 0;
+    @include font(15px, 26px, 100, $color-white);
+    letter-spacing: -0.23px;
+    opacity: 0.5;
+    text-align: right;
+  }
+}
