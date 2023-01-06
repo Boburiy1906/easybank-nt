@@ -389,7 +389,6 @@ a:active {
 @media screen and (max-width: 900px) {
   .sitenav__list {
     flex-direction: column;
-    align-items: center;
   }
 }
 .sitenav__item:not(:last-child) {
@@ -447,12 +446,17 @@ a:active {
 }
 @media screen and (max-width: 900px) {
   .header__wrapper {
-    padding: 32px 0;
-    background-color: #fff;
+    display: none;
     position: fixed;
-    top: 15%;
     border-radius: 4px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #fff;
+    transform: translateY(70%);
   }
+}
+.header__wrapper .show-nav {
+  transform: translateY(0%);
 }
 
 .hero {
@@ -490,7 +494,6 @@ a:active {
     background-position: right -70px top -100px, right -250px top -150px;
     background-size: contain;
     background-color: #fafafa;
-    background: linear-gradient(180deg, #2D314D 0%, rgba(45, 49, 77, 0.0001) 100%);
   }
 }
 @media screen and (max-width: 800px) {
@@ -499,7 +502,6 @@ a:active {
     background-position: right -160px top -180px, right -250px top -150px;
     background-size: contain, 750px 600px;
     background-color: #fafafa;
-    background: linear-gradient(180deg, #2D314D 0%, rgba(45, 49, 77, 0.0001) 100%);
   }
 }
 @media screen and (max-width: 600px) {
@@ -508,7 +510,6 @@ a:active {
     background-position: right top -100px, right -500px top -350px;
     background-size: contain, 1000px 1000px;
     background-color: #fafafa;
-    background: linear-gradient(180deg, #2D314D 0%, rgba(45, 49, 77, 0.0001) 100%);
   }
 }
 @media screen and (max-width: 500px) {
@@ -516,7 +517,6 @@ a:active {
     background: url(../img/hero-phones-mobile.svg) no-repeat, url(../img/hero-phones-mobile-bg.svg) no-repeat;
     background-position: right top -130px, right -500px top -190px;
     background-color: #fafafa;
-    background: linear-gradient(180deg, #2D314D 0%, rgba(45, 49, 77, 0.0001) 100%);
   }
 }
 @media screen and (max-width: 375px) {
@@ -524,7 +524,6 @@ a:active {
     background: url(../img/hero-phones-mobile.svg) no-repeat, url(../img/hero-phones-mobile-bg.svg) no-repeat;
     background-position: right top -130px, right -500px top -190px;
     background-color: #fafafa;
-    background: linear-gradient(180deg, #2D314D 0%, rgba(45, 49, 77, 0.0001) 100%);
   }
 }
 .hero__container {

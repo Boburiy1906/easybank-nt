@@ -1,5 +1,5 @@
 .header {
-background-color: $color-white;
+  background-color: $color-white;
 
   &__container {
     padding-top: 18px;
@@ -7,25 +7,30 @@ background-color: $color-white;
     display: flex;
     align-items: center;
 
-    @include responsive(desktop_4){
+    @include responsive(desktop_4) {
       padding-top: 24px;
       padding-bottom: 24px;
-          }
-}
+    }
+  }
 
-&__wrapper {
+  &__wrapper {
     width: 100%;
     display: flex;
     align-items: center;
 
-    @include responsive(desktop_4){
-      // display: none;
-      padding: 32px 0;
-      background-color: #fff;
+    @include responsive(desktop_4) {
+      display: none;
       position: fixed;
-      top: 15%;
       border-radius: 4px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      background-color: #fff;
+      transform: translateY(70%);
+    }
 
+    .show-nav{
+      transform: translateY(0%);
     }
   }
+
 }
